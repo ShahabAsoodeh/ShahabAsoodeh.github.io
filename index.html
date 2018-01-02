@@ -1,287 +1,313 @@
-# Configuration of Academic
-# Documentation: https://sourcethemes.com/academic/
-
-# The URL of your website.
-# End your URL with a `/` trailing slash, e.g. `https://example.com/`.
-baseurl = "/"
-
-# Title of your site
-title = "Academic"
-
-# Your copyright notice - appears in site footer.
-# To display a copyright symbol, type `&copy;`.
-copyright = "&copy; 2018"
-
-theme = "academic"
-enableEmoji = true
-footnotereturnlinkcontents = "<sup>^</sup>"
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-preserveTaxonomyNames = true
-paginate = 10
-
-# Enable comments by entering your Disqus shortname
-disqusShortname = ""
-
-# Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = ""
-
-# Default language to use (if you setup multilingual support)
-defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = false
-
-[outputs]
-  home = [ "HTML", "CSS", "RSS" ]
-  section = [ "HTML", "RSS" ]
-
-# Configure BlackFriday Markdown rendering.
-#   See: https://gohugo.io/readfiles/bfconfig/
-[blackfriday]
-  hrefTargetBlank = true  # `true` opens external links in a new tab.
-  fractions = true  # `false` disables smart fractions (e.g. 5/12 formatted as a fraction).
-  smartypants = true  # `false` disables all smart punctuation substitutions (e.g. smart quotes, dashes, fractions).
-
-[params]
-  # Color theme.
-  #   Choose from `default`, `ocean`, `forest`, `coffee`, `dark`, or `1950s`.
-  color_theme = "default"
-
-  # Font style.
-  #   Choose from `default`, `classic`, or `playfair`.
-  font = "default"
-
-  # Your details.
-  name = "Lena Smith"
-  role = "Professor of Artificial Intelligence"
-
-  # Organizations/Affiliations.
-  #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-  organizations = [ { name = "Stanford University", url = "" } ]
-
-  gravatar = false  # Get your avatar from Gravatar.com? (true/false)
-  avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
-  email = "test@example.org"
-  address = "Building 1 Room 1, Stanford University, California, 90210, USA"
-  office_hours = "Monday 10:00 to 13:00 or email for appointment"
-  phone = "888 888 88 88"
-  skype = "echo123"
-  telegram = ""
-
-  # Enable Keybase in Contact widget by entering your keybase.io username.
-  keybase = ""
-
-  # Discussion link (e.g. link to a forum, mailing list, or chat).
-  #   Uncomment line below to use.
-  #   discussion = { name = "Discuss", url = "https://discourse.gohugo.io" }
-
-  # Diplay a logo in navigation bar rather than title (optional).
-  #   To enable, place an image in `static/img/` and reference its filename below. To disable, set the value to "".
-  logo = ""
-
-  # Enable/disable map in Contact widget.
-  # To show your address on a map in the contact widget, you need to enter your latitude, longitude and choose
-  # a map provider below.
-  # To use Google Maps, set `map = 1` and enter your API key that can be obtained here:
-  #   https://developers.google.com/maps/documentation/javascript/get-api-key
-  # To use OpenStreetMap tiles, set `map = 2`.
-  # To use OpenStreetMap on a high traffic site, set `map = 3` and enter your API key that can be obtained here:
-  #   https://www.mapbox.com/studio/account/tokens
-  # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
-  #
-  # Map provider:
-  #   0: No map
-  #   1: Google Maps
-  #   2: OpenStreetMap (Mapnik)
-  #   3: OpenStreetMap (Mapbox)
-  map = 0
-  map_api_key = ""
-  latitude = "37.4275"
-  longitude = "-122.1697"
-  zoom = 15
-
-  # Date and time format (refer to Go's date format: http://fuckinggodateformat.com )
-  #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
-  date_format = "Jan 2, 2006"
-  #   Examples: "3:04 pm" or "15:04"
-  time_format = "3:04 PM"
-
-  # Show estimated reading time for posts?
-  reading_time = true
-
-  # Display comment count? Requires commenting to be enabled.
-  comment_count = true
-
-  # Display section pager for posts?
-  section_pager = false
-
-  # Enable global LaTeX math rendering?
-  #   If false, you can enable it locally on a per page basis.
-  math = false
-
-  # Highlight.js options
-  #   highlight
-  #     Enable global source code highlighting?  If false, you can
-  #     override it for a particular page in that page's preamble.
-  #
-  #     Example: highlight = true
-  #
-  #   highlight_languages
-  #     Add support for highlighting additional languages. Support for
-  #     languages mentioned here will be included in all pages. You
-  #     can also set this variable for a particular page in that
-  #     page's preamble.
-  #
-  #     Example: highlight_languages = ["go", "lisp", "ocaml"]
-  #
-  #   highlight_style
-  #     Choose a different CSS style for highlighting source
-  #     code. Setting this option in a page's preamble has no
-  #     effect.
-  #
-  #     Example: highlight_style = "github-gist"
-  #
-  #   For the list of supported languages and styles, see:
-  #   https://cdnjs.com/libraries/highlight.js/
-  #
-  #   For more info on the highlighting options, see:
-  #   https://sourcethemes.com/academic/post/writing-markdown-latex/#highlighting-options
-  highlight = true
-  highlight_languages = []
-  # highlight_style = "github"
-
-  # Enable native social sharing buttons?
-  sharing = true
-
-  # Link custom CSS and JS assets
-  #   (relative to /static/css and /static/js respectively)
-  custom_css = []
-  custom_js  = []
-
-  # Publication types.
-  #   Used to categorize publications.
-  #   The index of the publication type in the list is used as its unique numerical identifier.
-  #   The numeric ID is used in a publication's frontmatter to categorize it.
-  #   The language can be edited below.
-  #   For multilingual sites, `publication_types` can be copied to each language section at the end of this file and
-  #   translated.
-  publication_types = [
-    'Uncategorized',  # 0
-    'Conference paper',  # 1
-    'Journal article',  # 2
-    'Manuscript',  # 3
-    'Report',  # 4
-    'Book',  # 5
-    'Book section'  # 6
-  ]
-
-  # Configuration of talk pages.
-  [params.talks]
-    # Show talk time?
-    time = true
-
-  # Configuration of publication pages.
-  [params.publications]
-    # Date format (refer to Go's date format: http://fuckinggodateformat.com )
-    #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
-    date_format = "January, 2006"
-
-  # Configuration of project pages.
-  [params.projects]
-    # List publications and talks related to the project?
-    list_children = true
-
-    # Publication list format.
-    #   0 = Simple
-    #   1 = Detailed
-    #   2 = APA
-    #   3 = MLA
-    publication_format = 3
-
-  # Social/Academic Networking
-  #
-  # Icon pack "fa" includes the following social network icons:
-  #
-  #   twitter, weibo, linkedin, github, facebook, pinterest, google-plus,
-  #   youtube, instagram, soundcloud
-  #
-  #   For email icon, use "fa" icon pack, "envelope" icon, and
-  #   "mailto:your@email.com" as the link.
-  #
-  #   Full list: https://fortawesome.github.io/Font-Awesome/icons/
-  #
-  # Icon pack "ai" includes the following academic network icons:
-  #
-  #   google-scholar, arxiv, orcid, researchgate, mendeley
-  #
-  #   Full list: https://jpswalsh.github.io/academicons/
-
-  [[params.social]]
-    icon = "envelope"
-    icon_pack = "fa"
-    link = "mailto:test@example.org"
-
-  [[params.social]]
-    icon = "twitter"
-    icon_pack = "fa"
-    link = "//twitter.com/GeorgeCushen"
-
-  [[params.social]]
-    icon = "google-scholar"
-    icon_pack = "ai"
-    link = "https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ"
-
-  [[params.social]]
-    icon = "github"
-    icon_pack = "fa"
-    link = "//github.com/gcushen"
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Site made with Mobirise Website Builder v4.3.5, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.3.5, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo2.png" type="image/x-icon">
+  <meta name="description" content="Best Bootstrap HTML5 Personal Website Template - Free Download">
+  <title>Free HTML Bootstrap Personal Website Template</title>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
 
 
-# Navigation Links
-#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
-#     desired widget in your `content/home/` folder.
-#   The weight parameter defines the order that the links will appear in.
-[params.menus]
-  # Align the main menu to the right of the page? (true/false)
-  align_right = true
 
-[[menu.main]]
-  name = "Home"
-  url = "#about"
-  weight = 1
+<section class="menu cid-qyucyb0YBc" once="menu" id="menu1-0" data-rv-view="169">
 
-[[menu.main]]
-  name = "Publications"
-  url = "#publications_selected"
-  weight = 2
+    
 
-[[menu.main]]
-  name = "Posts"
-  url = "#posts"
-  weight = 3
+    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="menu-logo">
+            <div class="navbar-brand">
+                
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="https://mobirise.com/bootstrap-template/">
+                        PERSONAL WEBSITE TEMPLATE</a></span>
+            </div>
+        </div>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle text-black display-4" href="#" data-toggle="dropdown-submenu" aria-expanded="false">
+                        
+                        BLOCK DEMOS 1</a><div class="dropdown-menu"><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/slider.html">Slider Header Demo</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/video-background.html">Video Background Demo</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/footer-template.html">Footer Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/table-template.html">Table Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/carousel-template.html">Carousel Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/blog.html">Gallery Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/menu-template.html">Menu Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/navigation-menu-template.html">Navigation Menu Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/navbar-template.html">Navbar Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/header-template.html">Header Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/registration-form-template.html">Registration Form Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/grid-template.html">Grid Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/social-network-template.html">Social Network Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/parallax-template.html">Parallax Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/parallax-scrolling-template.html">Parallax Scrolling Template</a></div></li>
+                <li class="nav-item dropdown"><a class="nav-link link dropdown-toggle text-black display-4" href="#" data-toggle="dropdown-submenu" aria-expanded="false">
+                        
+                        BLOCK DEMOS 2</a><div class="dropdown-menu"><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/shopping-cart-template.html">Shopping Cart Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/contact-form-template.html">Contact Form Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/list-template.html">List Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/video-template.html">Video Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/photo-gallery-template.html">Photo Gallery Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/map-template.html">Map Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/faq-template.html">FAQ Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/slider-template.html">Slider Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/background-template.html">Video Background Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/documentation-template.html">Documentation Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/article-template.html">Article Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/google-maps-template.html">Google Maps Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/form-templates.html">Form Templates </a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/tab-template.html">Tab Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/video-gallery-template.html">Video Gallery Template</a></div></li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link link dropdown-toggle text-black display-4" href="#" data-toggle="dropdown-submenu" aria-expanded="false">SITE TEMPLATES</a><div class="dropdown-menu"><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/one-page.html">One Page Template<br></a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/blog.html">Blog Template Demo<br></a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/real-estate-template/">Real Estate Template<br></a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/restaurant-template/">Restaurant Template<br></a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/travel-template/">Travel Template<br></a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/wedding-template/">Wedding Template<br></a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/hotel-template/">Hotel Template<br></a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/landing-page-template/">Landing Page Template<br></a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/news-template/">News Template<br></a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/profile-template/">Profile Template<br></a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/education-template/">Education Template<br></a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/coming-soon-template/">Coming Soon Template<br></a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/error-page-template/">Error Page Template<br></a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/event-template/">Event Template<br></a></div>
+                </li><li class="nav-item dropdown open"><a class="nav-link link dropdown-toggle text-black display-4" href="#" aria-expanded="true" data-toggle="dropdown-submenu">SITE TEMPLATES 2</a><div class="dropdown-menu"><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/about-us-page-template/" aria-expanded="false">About Us Page Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/agency-template/" aria-expanded="false">Agency Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/application-template/" aria-expanded="false">Application Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/business-template/" aria-expanded="false">Business Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/corporate-template/" aria-expanded="false">Corporate Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/homepage-template/" aria-expanded="false">Homepage Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/magazine-template/" aria-expanded="false">Magazine Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/agency-template/multi-page-template.html" aria-expanded="false">Multi Page Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/personal-website-template/" aria-expanded="false">Personal Website Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/photography-template/" aria-expanded="false">Photography Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/store-template/" aria-expanded="false">Store Template</a><a class="dropdown-item text-black display-4" href="https://mobirise.com/bootstrap-template/web-application-template/" aria-expanded="false">Web Application Template</a></div></li></ul>
+            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-primary display-4" href="https://mobirise.com/bootstrap-template/mobirise-free-template.zip">
+                    
+                    FREE DOWNLOAD</a></div>
+        </div>
+    </nav>
+</section>
 
-[[menu.main]]
-  name = "Projects"
-  url = "#projects"
-  weight = 4
+<section class="engine"><a href="https://mobirise.co/d">web software</a></section><section class="testimonials3 cid-qyucOJY58V" id="testimonials3-2" data-rv-view="171">
 
-[[menu.main]]
-  name = "Teaching"
-  url = "#teaching"
-  weight = 5
+    
 
-[[menu.main]]
-  name = "Contact"
-  url = "#contact"
-  weight = 6
+    
 
-# Taxonomies.
-[taxonomies]
-  tag = "tags"
-  category = "categories"
-  publication_type = "publication_types"
+    <div class="container">
+        <div class="media-container-row">
+            <div class="media-content px-3 align-self-center mbr-white py-2">
+                <h1 class="mbr-text testimonial-text mbr-fonts-style display-7"><span style="font-style: normal;">HTML5 Bootstrap Personal Website Template</span></h1>
+                <p class="mbr-author-name pt-4 mb-2 mbr-fonts-style display-1">
+                   Julie C.
+                </p>
+                <p class="mbr-author-desc mbr-fonts-style display-7">
+                   INTERFACE DESIGNER
+                </p>
+            </div>
 
-# Languages
-#   Create a [languages.X] block for each language you want, where X is the language ID.
+            <div class="mbr-figure pl-lg-5" style="width: 130%;">
+              <img src="assets/images/billy-pasco-317724-3457x4321.jpg" alt="" title="" media-simple="true">
+            </div>
+        </div>
+    </div>
+</section>
 
-# Configure the English version of the website.
-[Languages.en]
-  languageCode = "en-us"
+<section class="mbr-section info2 cid-qyv0BRlbE8" id="info2-g" data-rv-view="174">
+
+    
+
+    
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="media-container-column col-12 col-lg-3 col-md-4">
+                <div class="mbr-section-btn align-left py-4"><a class="btn btn-black-outline display-4" href="#">
+                    
+                    SEND ME A NOTE</a></div>
+            </div>
+            <div class="media-container-column title col-12 col-lg-7 col-md-6">
+                <h2 class="align-right mbr-bold mbr-white pb-3 mbr-fonts-style display-2"><span style="font-weight: normal;">
+                    CONTACT ME</span></h2>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section content4 cid-qyuzy9HYXi" id="content4-d" data-rv-view="177">
+
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center pb-3 mbr-fonts-style display-2">My Works</h2>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features2 cid-qyufBFEj84" id="features2-4" data-rv-view="179">
+
+    
+
+    
+    
+    <div class="container">
+        <div class="media-container-row">
+            <div class="card p-3 col-12 col-md-6 col-lg-4">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <img src="assets/images/edho-pratama-149011-4062x2708.jpg" alt="Mobirise" title="" media-simple="true">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title pb-3 mbr-fonts-style display-5">
+                            Free Fonts</h4>
+                        <p class="mbr-text mbr-fonts-style display-7">
+                            Duis consectetur neque orci. Praesent vitae consequat ante, vitae aliquam justo. Curabitur fermentum vel mauris a placerat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-3 col-12 col-md-6 col-lg-4">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <img src="assets/images/angelo-pantazis-180828-2000x1333.jpg" alt="Mobirise" title="" media-simple="true">
+                    </div>
+                    <div class="card-box ">
+                        <h4 class="card-title pb-3 mbr-fonts-style display-5">
+                            Lettering</h4>
+                        <p class="mbr-text mbr-fonts-style display-7">
+                            Aenean vestibulum aliquam mauris non ullamcorper. Maecenas in ex eget tellus iaculis tempus. Sed commodo posuere placerat.&nbsp;<br> </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-3 col-12 col-md-6 col-lg-4">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <img src="assets/images/alisha-hieb-249784-2000x1333.jpg" alt="Mobirise" title="" media-simple="true">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title pb-3 mbr-fonts-style display-5">
+                            Creative Photography</h4>
+                        <p class="mbr-text mbr-fonts-style display-7">
+                            Curabitur ligula ex, sagittis vel turpis sed, cursus aliquam risus. Nunc dictum enim a ante maximus, in sagittis elit tincidunt. </p>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section content4 cid-qyuivhFk38" id="content4-c" data-rv-view="182">
+
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center pb-3 mbr-fonts-style display-2">My Awards</h2>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-qyuinV19zB" id="content12-9" data-rv-view="184">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>2007 - </strong>Cras at sem neque. Morbi lorem dolor, cursus id nulla iaculis, feugiat interdum est. Nam neque augue, feugiat non ligula sit amet, pulvinar lacinia lacus. Nam tempus velit ut nunc facilisis, ac ornare elit pulvinar.</li>
+                    <li><strong>2012 - </strong>Donec vitae quam at quam venenatis sollicitudin. In ornare, est in cursus maximus, ipsum dolor rhoncus urna, id finibus dolor ex lobortis justo. Sed purus ligula, vehicula nec tempor in, feugiat et nulla.</li>
+                    <li><strong>2013 - </strong>Quisque eu purus in justo lacinia condimentum nec eu risus. Fusce tellus tortor, lobortis non sagittis in, suscipit eget libero. Praesent ac pellentesque erat, quis imperdiet odio. Sed imperdiet iaculis enim a volutpat.&nbsp;</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section content4 cid-qyuiu1KBmN" id="content4-b" data-rv-view="185">
+
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center pb-3 mbr-fonts-style display-2">
+                    My Background</h2>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-qyuishpvB4" id="content12-a" data-rv-view="187">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Smith College Theatre Courses 2012</strong>- Aenean sagittis erat ac ipsum molestie egestas. Fusce dignissim risus diam, in pulvinar nisl varius at. Ut sed metus laoreet, tempor dui a, lacinia lectus.</li>
+                    <li><strong>Modern Poetry Course 2014&nbsp;</strong>- Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc et lectus vitae ipsum pellentesque egestas.&nbsp;</li>
+                    <li><strong>Interface Lab 2015</strong>&nbsp;- Donec eget ante rhoncus, malesuada orci vel, pellentesque ipsum. Donec condimentum dui sed lobortis pharetra.&nbsp;</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cid-qyuZH0oPRJ" id="social-buttons2-f" data-rv-view="188">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="col-md-8 align-center">
+                <h2 class="pb-3 mbr-fonts-style display-2">
+                    FOLLOW ME!
+                </h2>
+                <div class="social-list pl-0 mb-0">
+                    <a href="https://twitter.com/mobirise" target="_blank">
+                        <span class="px-2 socicon-twitter socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
+                    </a>
+                    <a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
+                        <span class="px-2 socicon-facebook socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
+                    </a>
+                    <a href="https://instagram.com/mobirise" target="_blank">
+                        <span class="px-2 socicon-instagram socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
+                    </a>
+                    <a href="https://www.youtube.com/c/mobirise" target="_blank">
+                        
+                    </a>
+                    <a href="https://plus.google.com/u/0/+Mobirise" target="_blank">
+                        
+                    </a>
+                    <a href="https://www.behance.net/Mobirise" target="_blank">
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section once="" class="cid-qyui3ehNN7" id="footer6-8" data-rv-view="191">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-7">
+                    © Copyright 2017 <a href="https://mobirise.com/bootstrap-template/" class="text-black">Free Bootstrap Templates</a> - All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smooth-scroll/smooth-scroll.js"></script>
+  <script src="assets/dropdown/js/script.min.js"></script>
+  <script src="assets/touch-swipe/jquery.touch-swipe.min.js"></script>
+  <script src="assets/social-likes/social-likes.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>
