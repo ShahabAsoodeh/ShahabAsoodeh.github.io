@@ -1,8 +1,8 @@
-## Welcome to GitHub Pages
+## Shahab Asoodeh
 
-You can use the [editor on GitHub](https://github.com/ShahabAsoodeh/ShahabAsoodeh.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+I am currently a Postdoctoral Research Scholar affiliated jointly with Computation Institute and Institute of Genetics and System Biology at The University of Chicago. I work with [James Evans](http://home.uchicago.edu/~jevans/) and [Ishanu Chattopadhyay](http://home.uchicago.edu/~ishanu/).
+Prior to that, I was a PhD student in the Department of Mathematics and Statistics at Queen's University under the supervision of [Tamas Linder](http://www.mast.queensu.ca/~linder/) and [Fady Alajaji](http://www.mast.queensu.ca/~fady/). 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Markdown
 
